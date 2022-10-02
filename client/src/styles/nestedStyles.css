@@ -1,0 +1,117 @@
+/* Heading main css. */
+.ten h1 {
+	font-style: oblique; font-size:40px; font-weight:800; text-transform:uppercase;
+}
+
+.ten h3{
+    font-style: oblique;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.ten h1:before {
+    background-color: #c50000;
+    border-radius: 0.25rem;
+    content: '';
+    display: block;
+    height: 0.25rem;
+    width: 42px;
+    margin-bottom: 1.25rem;
+}
+  
+.ten h3:before {
+    background-color: #c50000;
+    border-radius: 0.25rem;
+    content: '';
+    display: block;
+    height: 0.25rem;
+    width: 42px;
+    margin-bottom: 1.25rem;
+}
+
+/* List styling which is showing all todos to be done. */
+.all-todos-div {
+    width: 450px;
+    margin: 20px auto;
+}
+
+.each-todo {
+    display: inline-block;
+    width: fit-content;
+    font-style: normal;
+    font-size: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+ /* Styling single to for update and delete */
+.single-todo-div{
+    display: grid;
+    place-content: center;
+}
+
+button {
+    margin: 20px;
+    outline: none;
+}
+.delete-btn, .update-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 100px;
+    display: inline-block;
+}
+.btn-functions {
+    background: #000;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    z-index: 1;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    border-radius: 10px;
+}
+ .btn-functions:hover {
+   background: white;
+   color: #000;
+}
+ .btn-functions:before,
+ .btn-functions:after {
+   position: absolute;
+   content: "";
+   left: 0;
+   width: 100%;
+   height: 50%;
+   right: 0;
+   z-index: -1;
+   background: #2a1d1d;
+   border: 2px solid #2a1d1d;
+   transition: all 0.3s ease;
+}
+ .btn-functions:before {
+   top: 0;
+}
+ .btn-functions:after {
+   bottom: 0;
+}
+ .btn-functions:hover:before,
+ .btn-functions:hover:after {
+   height: 0;
+   background-color: #000;
+}
+
+.go-back-link{
+    text-align: center;
+    text-decoration: none;
+}
+ 
+
+
