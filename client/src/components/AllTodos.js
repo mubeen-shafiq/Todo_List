@@ -20,7 +20,6 @@ export default function allTodos(props){
                     <ul key = {eachTodo.id} className="todo-list">
                         <Link to = {`${eachTodo.id}`} style={{ textDecoration: 'none', color: '#f5f6fa' }}>
                             <li className="each-todo">{eachTodo.content}</li>
-                            <input type="date" id="birthday" name="birthday"></input>
                         </Link>
                     </ul>
                 )
